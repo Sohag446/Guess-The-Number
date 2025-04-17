@@ -1,5 +1,5 @@
 randomNumber = Math.floor(Math.random() * 100) + 1;
-console.log("Secret Number (Start):", randomNumber);
+console.log(randomNumber);
 
 guessCount = 0;
 
@@ -37,7 +37,7 @@ submitBtn.addEventListener("click", function () {
 
 resetBtn.addEventListener("click", function () {
     randomNumber = Math.floor(Math.random() * 100) + 1;
-    console.log("Secret Number (Reset):", randomNumber);
+    console.log(randomNumber);
 
     guessCount = 0;
     message.innerText = "";

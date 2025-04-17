@@ -3,14 +3,14 @@ console.log("Secret Number (Start):", randomNumber);
 
 guessCount = 0;
 
-const input = document.getElementById("guessInput");
-const submitBtn = document.getElementById("submitBtn");
-const resetBtn = document.getElementById("resetBtn");
-const message = document.getElementById("message");
-const countText = document.getElementById("count_text");
+let input = document.getElementById("guessInput");
+let submitBtn = document.getElementById("submitBtn");
+let resetBtn = document.getElementById("resetBtn");
+let message = document.getElementById("message");
+let countText = document.getElementById("count_text");
 
 submitBtn.addEventListener("click", function () {
-    const userGuess = Number(input.value);
+    let userGuess = Number(input.value);
 
     if (userGuess < 1 || userGuess > 100) {
         message.innerText = "Please enter a number between 1 and 100.";
